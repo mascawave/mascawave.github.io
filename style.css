@@ -1,0 +1,47 @@
+body { margin:0; padding:0; }
+
+#map { position:absolute; top:0; bottom:0; width:100%; }
+
+#map {
+    position: fixed;
+    width:50%;
+}
+
+#features {
+    width: 50%;
+    margin-left: 50%;
+    font-family: Tw Cen MT;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+section {
+    padding:  25px 50px;
+    line-height: 25px;
+    border-bottom: 1px solid #ddd;
+    opacity: 0.25;
+    font-size: 20px;
+}
+section.active {
+    opacity: 1;
+}
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 1000px;
+}
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
